@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class Receiver {
     private CountDownLatch latch = new CountDownLatch(1);
 
-    public void recieveMessage(String message) {
+    public void receiveMessage(String message) {
         System.out.println("Received < " + message + ">");
         latch.countDown();
     }
